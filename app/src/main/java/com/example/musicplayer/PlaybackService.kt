@@ -23,7 +23,6 @@ class MusicService : Service() {
 
     private fun playMusic() {
         if (!this::mediaPlayer.isInitialized) {
-            // Initialize MediaPlayer and start playback
             mediaPlayer = MediaPlayer.create(this, R.raw.audio01)
             mediaPlayer.isLooping = true
             mediaPlayer.start()
